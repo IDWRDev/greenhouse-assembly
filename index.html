@@ -1,86 +1,59 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="The GreenHouse Assembly Ministries — growing lives, shaping purpose, and building people for Kingdom impact." />
-  <meta name="theme-color" content="#0b4a39" />
-  <link rel="icon" href="assets/images/greenhouse-mark.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:opsz,wght@5..1200,500;5..1200,600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The GreenHouse Assembly Ministries — a house of faith, formation, and flourishing.">
+  <meta name="theme-color" content="#0c4938">
+  <link rel="icon" href="assets/logos/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/logos/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/logos/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:opsz,wght@5..1200,500;5..1200,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
   <title>The GreenHouse Assembly Ministries</title>
-</head>
+<meta property="og:type" content="website"><meta property="og:site_name" content="The GreenHouse Assembly Ministries"><meta property="og:title" content="The GreenHouse Assembly Ministries"><meta property="og:description" content="The GreenHouse Assembly Ministries — a house of faith, formation, and flourishing."><meta name="twitter:card" content="summary"><meta name="twitter:title" content="The GreenHouse Assembly Ministries"><meta name="twitter:description" content="The GreenHouse Assembly Ministries — a house of faith, formation, and flourishing."><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"The GreenHouse Assembly Ministries","description":"The GreenHouse Assembly Ministries — a house of faith, formation, and flourishing.","isPartOf":{"@type":"WebSite","name":"The GreenHouse Assembly Ministries"}}</script></head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
   <header class="site-header">
     <nav class="nav container" aria-label="Main navigation">
-      <a class="brand" href="#home" aria-label="The GreenHouse Assembly home"><img src="assets/images/greenhouse-mark.png" alt="The GreenHouse Assembly Ministries" /></a>
-      <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links"><span></span><span></span></button>
+      <a class="brand" href="#home" aria-label="The GreenHouse Assembly home"><img src="assets/logos/navigation-mark.png" alt="The GreenHouse Assembly Ministries"></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation"><span></span><span></span><span></span></button>
       <div class="nav-links" id="nav-links">
-        <a href="#about">Our house</a><a href="#ministries">Ministries</a><a href="#resources">Resources</a><a href="#events">Gatherings</a>
-        <a class="nav-give" href="#give">Give</a>
+        <a href="pages/about.html">Our house</a><a href="pages/ministries.html">Ministries</a><a href="pages/teaching.html">Teaching</a><a href="pages/resources.html">Resources</a><a href="pages/events.html">Gatherings</a>
+        <a class="nav-give" href="pages/donations.html">Give</a>
       </div>
     </nav>
   </header>
 
-  <main id="home">
-    <section class="hero">
-      <div class="hero-image" role="img" aria-label="A joyful community gathering outdoors"></div>
-      <div class="hero-wash"></div>
-      <div class="container hero-content">
-        <p class="eyebrow light">Welcome home</p>
-        <h1>Where people<br />grow <em>into purpose.</em></h1>
-        <p class="hero-copy">A house of faith, formation, and flourishing—helping every generation become all that God has called them to be.</p>
-        <div class="hero-actions"><a class="button button-gold" href="#events">Plan your visit <span>→</span></a><a class="text-link light" href="#about">Discover our story <span>↗</span></a></div>
-      </div>
-      <div class="scroll-note">Scroll to explore <span></span></div>
+  <main id="main-content">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-image" role="img" aria-label="A joyful community gathering outdoors"></div><div class="hero-wash"></div>
+      <div class="container hero-content"><p class="eyebrow light">Welcome home</p><h1 id="hero-title">Where people<br>grow <em>into purpose.</em></h1><p class="hero-copy">A house of faith, formation, and flourishing—helping every generation become all that God has called them to be.</p><div class="hero-actions"><a class="button button-gold" href="#events">Plan your visit <span aria-hidden="true">→</span></a><a class="text-link light" href="#about">Discover our story <span aria-hidden="true">↗</span></a></div></div>
+      <p class="scroll-note" aria-hidden="true">Scroll to explore <span></span></p>
     </section>
 
-    <section class="intro section container" id="about">
-      <div class="section-label"><span>01</span> Our heart</div>
-      <div class="intro-copy reveal"><p class="eyebrow">A place to belong</p><h2>We believe every life was designed to <em>flourish.</em></h2></div>
-      <div class="intro-aside reveal"><p>GreenHouse is a family of people being transformed by the presence and wisdom of God. We gather to grow deep roots, find clarity for our purpose, and bring life to our city and world.</p><a class="text-link" href="#mission">More about us <span>→</span></a></div>
-    </section>
+    <section class="intro section container" id="about" aria-labelledby="about-title"><div class="section-label"><span>01</span> Our heart</div><div class="intro-copy reveal"><p class="eyebrow">A place to belong</p><h2 id="about-title">We believe every life was designed to <em>flourish.</em></h2></div><div class="intro-aside reveal"><p>GreenHouse is a family of people being transformed by the presence and wisdom of God. We gather to grow deep roots, find clarity for our purpose, and bring life to our city and world.</p><a class="text-link" href="#mission">More about us <span aria-hidden="true">→</span></a></div></section>
 
-    <section class="vision" id="mission">
-      <div class="container vision-grid">
-        <div class="vision-image"><img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=1100&q=85" alt="Friends sharing a joyful moment together" loading="lazy" /></div>
-        <div class="vision-copy reveal"><p class="eyebrow">Our vision</p><h2>To cultivate people who carry <em>Kingdom life</em> everywhere.</h2><p>Our purpose is formation: spirit, mind, and body aligned to God’s design. From the prayer room to the marketplace, we are becoming a people of deep faith, wise leadership, and creative excellence.</p><div class="pillars"><span>Spirit</span><span>Mind</span><span>Body</span><span>Purpose</span></div></div>
-      </div>
-    </section>
+    <section class="vision" id="mission" aria-labelledby="mission-title"><div class="container vision-grid"><div class="vision-image"><img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=1100&q=85" alt="Friends sharing a joyful moment together" loading="lazy" decoding="async"></div><div class="vision-copy reveal"><p class="eyebrow">Our vision</p><h2 id="mission-title">To cultivate people who carry <em>Kingdom life</em> everywhere.</h2><p>Our purpose is formation: spirit, mind, and body aligned to God’s design. From the prayer room to the marketplace, we are becoming a people of deep faith, wise leadership, and creative excellence.</p><div class="pillars" aria-label="Areas of formation"><span>Spirit</span><span>Mind</span><span>Body</span><span>Purpose</span></div></div></div></section>
 
-    <section class="values section container">
-      <div class="values-heading"><p class="eyebrow">What shapes us</p><h2>Rooted in truth.<br /><em>Alive with hope.</em></h2></div>
-      <div class="values-list">
-        <article class="value reveal"><span>01</span><h3>Presence</h3><p>We make room for God’s presence to renew and lead us.</p></article>
-        <article class="value reveal"><span>02</span><h3>Formation</h3><p>We grow into the character, mind, and life of Christ.</p></article>
-        <article class="value reveal"><span>03</span><h3>Excellence</h3><p>We create and serve with intentionality and beauty.</p></article>
-        <article class="value reveal"><span>04</span><h3>Impact</h3><p>We bring tangible love and hope beyond our walls.</p></article>
-      </div>
-    </section>
+    <section class="values section container" aria-labelledby="values-title"><div class="values-heading"><p class="eyebrow">What shapes us</p><h2 id="values-title">Rooted in truth.<br><em>Alive with hope.</em></h2></div><div class="values-list"><article class="value reveal"><span>01</span><h3>Presence</h3><p>We make room for God’s presence to renew and lead us.</p></article><article class="value reveal"><span>02</span><h3>Formation</h3><p>We grow into the character, mind, and life of Christ.</p></article><article class="value reveal"><span>03</span><h3>Excellence</h3><p>We create and serve with intentionality and beauty.</p></article><article class="value reveal"><span>04</span><h3>Impact</h3><p>We bring tangible love and hope beyond our walls.</p></article></div></section>
 
-    <section class="ministries section" id="ministries">
-      <div class="container"><div class="section-top"><div><p class="eyebrow">Find your place</p><h2>A house with room<br />for <em>every generation.</em></h2></div><a class="text-link" href="#contact">Connect with a ministry <span>→</span></a></div>
-      <div class="ministry-grid">
-        <article class="ministry-card large"><img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1000&q=85" alt="Young people laughing together" loading="lazy" /><div><span>Next generation</span><h3>GreenHouse<br />Youth</h3><a href="#contact" aria-label="Learn about GreenHouse Youth">Explore <b>→</b></a></div></article>
-        <article class="ministry-card"><img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=900&q=85" alt="Children playing in a bright room" loading="lazy" /><div><span>Little lives</span><h3>GreenHouse<br />Children</h3><a href="#contact" aria-label="Learn about GreenHouse Children">Explore <b>→</b></a></div></article>
-        <article class="ministry-card green-card"><div><span>Purpose & leadership</span><h3>Academy</h3><p>Grow in biblical wisdom, purpose, and Kingdom intelligence.</p><a href="#resources">Discover the academy <b>→</b></a></div><i>✦</i></article>
-        <article class="ministry-card"><img src="https://images.unsplash.com/photo-1520857014576-2c4f4c972b57?auto=format&fit=crop&w=900&q=85" alt="Women gathered in community" loading="lazy" /><div><span>Community</span><h3>Men &<br />Women</h3><a href="#contact" aria-label="Learn about our community">Explore <b>→</b></a></div></article>
-      </div></div>
-    </section>
+    <section class="ministries section" id="ministries" aria-labelledby="ministries-title"><div class="container"><div class="section-top"><div><p class="eyebrow">Find your place</p><h2 id="ministries-title">A house with room<br>for <em>every generation.</em></h2></div><a class="text-link" href="#contact">Connect with a ministry <span aria-hidden="true">→</span></a></div><div class="ministry-grid"><article class="ministry-card large"><img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1000&q=85" alt="Young people laughing together" loading="lazy" decoding="async"><div><span>Next generation</span><h3>GreenHouse<br>Youth</h3><a href="#contact">Explore <b aria-hidden="true">→</b></a></div></article><article class="ministry-card"><img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=900&q=85" alt="Children playing in a bright room" loading="lazy" decoding="async"><div><span>Little lives</span><h3>GreenHouse<br>Children</h3><a href="#contact">Explore <b aria-hidden="true">→</b></a></div></article><article class="ministry-card green-card"><div><span>Purpose &amp; leadership</span><h3>Academy</h3><p>More information will be shared as this resource develops.</p><a href="#resources">Discover the academy <b aria-hidden="true">→</b></a></div><i aria-hidden="true">✦</i></article><article class="ministry-card"><img src="https://images.unsplash.com/photo-1520857014576-2c4f4c972b57?auto=format&fit=crop&w=900&q=85" alt="Women gathered in community" loading="lazy" decoding="async"><div><span>Community</span><h3>Men &amp;<br>Women</h3><a href="#contact">Explore <b aria-hidden="true">→</b></a></div></article></div></div></section>
 
-    <section class="gather section" id="events"><div class="container gather-inner"><div><p class="eyebrow">Join us this Sunday</p><h2>There is a seat<br />waiting for <em>you.</em></h2><p>Come as you are. Leave rooted, refreshed, and ready to live with purpose.</p><a class="button" href="#contact">Get directions <span>→</span></a></div><div class="service-card"><p>Sunday gathering</p><strong>9:00 <small>AM</small></strong><span>and</span><strong>11:30 <small>AM</small></strong><hr /><p class="location">The GreenHouse Assembly<br />A place of life & transformation</p></div></div></section>
+    <section class="gather section" id="events" aria-labelledby="events-title"><div class="container gather-inner"><div><p class="eyebrow">Gather with us</p><h2 id="events-title">There is a seat<br>waiting for <em>you.</em></h2><p>Come as you are. Confirmed gathering details will be shared here soon.</p><a class="button" href="#contact">Stay informed <span aria-hidden="true">→</span></a></div><aside class="service-card" aria-label="Gathering information"><p>Gathering details</p><strong>Coming <small>soon</small></strong><hr><p class="location">Confirmed times and location will be announced here.</p></aside></div></section>
 
-    <section class="resources section container" id="resources"><div class="section-top"><div><p class="eyebrow">Grow throughout the week</p><h2>Resources for<br /><em>the journey.</em></h2></div><a class="text-link" href="#contact">View resource centre <span>→</span></a></div><div class="resource-grid"><article class="resource-feature"><img src="https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&fit=crop&w=1200&q=85" alt="Open Bible in sunlit grass" loading="lazy" /><div><span>Latest teaching</span><h3>Building a life that bears lasting fruit</h3><a href="#contact">Watch message <b>→</b></a></div></article><div class="resource-list"><a href="#contact"><span>01</span><div><small>Podcast</small><h3>The GreenHouse conversations</h3></div><b>↗</b></a><a href="#contact"><span>02</span><div><small>Book spotlight</small><h3>Called to cultivate</h3></div><b>↗</b></a><a href="#contact"><span>03</span><div><small>Prayer guide</small><h3>21 days of deeper roots</h3></div><b>↗</b></a></div></div></section>
+    <section class="resources section container" id="resources" aria-labelledby="resources-title"><div class="section-top"><div><p class="eyebrow">Grow throughout the week</p><h2 id="resources-title">Resources for<br><em>the journey.</em></h2></div><a class="text-link" href="#contact">Ask about resources <span aria-hidden="true">→</span></a></div><div class="resource-grid"><article class="resource-feature"><img src="https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&fit=crop&w=1200&q=85" alt="An open Bible resting on sunlit grass" loading="lazy" decoding="async"><div><span>Teaching library</span><h3>New resources are being prepared</h3><a href="#contact">Stay informed <b aria-hidden="true">→</b></a></div></article><div class="resource-list" aria-label="Upcoming resources"><div><span>01</span><div><small>Podcast</small><h3>Coming soon</h3></div></div><div><span>02</span><div><small>Book spotlight</small><h3>Coming soon</h3></div></div><div><span>03</span><div><small>Prayer guide</small><h3>Coming soon</h3></div></div></div></div></section>
 
-    <section class="testimony"><div class="container"><p class="eyebrow">Stories of transformation</p><blockquote>“GreenHouse gave me more than a Sunday service. It gave me a family, a fresh sense of purpose, and space to become who God made me to be.”</blockquote><div class="quote-by"><span></span><p><b>Amara Okafor</b><br />GreenHouse family</p></div></div></section>
+    <section class="testimony" aria-labelledby="stories-title"><div class="container"><p class="eyebrow">Stories of transformation</p><h2 id="stories-title" class="sr-only">Stories of transformation</h2><blockquote>Stories from our community will be shared here soon.</blockquote></div></section>
 
-    <section class="give section" id="give"><div class="container give-grid"><div><p class="eyebrow">A life of generosity</p><h2>Together, we plant<br />seeds of <em>hope.</em></h2></div><div><p>Your generosity makes space for lives to be transformed—locally and around the world. Every gift helps us build people, strengthen families, and serve our community with excellence.</p><a class="button button-gold" href="#contact">Give securely <span>→</span></a></div></div></section>
+    <section class="give section" id="give" aria-labelledby="give-title"><div class="container give-grid"><div><p class="eyebrow">A life of generosity</p><h2 id="give-title">Together, we plant<br>seeds of <em>hope.</em></h2></div><div><p>Online giving details are being prepared. Please return for verified giving information.</p><span class="button button-gold is-disabled" aria-disabled="true">Giving details coming soon</span></div></div></section>
 
-    <section class="newsletter" id="contact"><div class="container newsletter-inner"><div><p class="eyebrow">Stay connected</p><h2>Fresh encouragement,<br /><em>straight to your inbox.</em></h2></div><form><label class="sr-only" for="email">Email address</label><input id="email" type="email" placeholder="Your email address" required /><button type="submit" aria-label="Subscribe">→</button></form><p class="form-note">A little light for your week. Unsubscribe anytime.</p></div></section>
+    <section class="newsletter" id="contact" aria-labelledby="contact-title"><div class="container newsletter-inner"><div><p class="eyebrow">Stay connected</p><h2 id="contact-title">Fresh encouragement,<br><em>straight to your inbox.</em></h2></div><div class="newsletter-form" aria-describedby="newsletter-status"><label class="sr-only" for="email">Email address</label><input id="email" type="email" placeholder="Your email address" disabled><button type="button" disabled>Coming soon</button></div><p class="form-note" id="newsletter-status" role="status">Online subscription is not active yet. Please check back for updates.</p></div></section>
   </main>
-  <footer><div class="container footer-top"><img src="assets/images/greenhouse-logo.png" alt="The GreenHouse Assembly Ministries" /><div><h3>Come grow<br />with us.</h3><a class="text-link light" href="#events">Plan your visit <span>→</span></a></div><div class="footer-links"><a href="#about">About</a><a href="#ministries">Ministries</a><a href="#resources">Resources</a><a href="#give">Give</a><a href="#contact">Contact</a></div></div><div class="container footer-bottom"><span>© <span id="year"></span> The GreenHouse Assembly Ministries</span><span>Made to cultivate life</span></div></footer>
+
+  <footer><div class="container footer-top"><img src="assets/logos/footer-logo.png" alt="The GreenHouse Assembly Ministries"><div><h2>Come grow<br>with us.</h2><a class="text-link light" href="#events">Plan your visit <span aria-hidden="true">→</span></a></div><div class="footer-links"><a href="#about">About</a><a href="#ministries">Ministries</a><a href="#resources">Resources</a><a href="#give">Give</a><a href="#contact">Contact</a></div></div><div class="container footer-bottom"><span>© <span id="year"></span> The GreenHouse Assembly Ministries</span><span><a href="documents/privacy-notice.html">Privacy notice</a> · <a href="documents/terms-of-use.html">Terms of use</a></span></div></footer>
   <script src="js/main.js"></script>
-</body>
+<script src="js/mobile-navigation.js"></script><script src="js/sprint4-content.js"></script></body>
 </html>
