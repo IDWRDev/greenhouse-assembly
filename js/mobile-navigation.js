@@ -176,4 +176,17 @@
 
   showHeader();
   scheduleHide();
+
+  const loadOperations = () => {
+    if (window.__greenhouseOperationsLoading) return;
+    window.__greenhouseOperationsLoading = true;
+    const operations = document.createElement('script');
+    operations.src = `${root}js/site-operations.js`;
+    operations.defer = true;
+    const config = document.createElement('script');
+    config.src = `${root}js/site-config.js`;
+    config.onload = () => document.head.append(operations);
+    document.head.append(config);
+  };
+  loadOperations();
 })();
