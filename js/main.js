@@ -39,3 +39,14 @@ if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-mot
 }
 
 document.querySelector('#year').textContent = new Date().getFullYear();
+
+if (!window.__greenhouseOperationsLoading) {
+  window.__greenhouseOperationsLoading = true;
+  const operations = document.createElement('script');
+  operations.src = 'js/site-operations.js';
+  operations.defer = true;
+  const config = document.createElement('script');
+  config.src = 'js/site-config.js';
+  config.onload = () => document.head.append(operations);
+  document.head.append(config);
+}
