@@ -45,6 +45,21 @@ Primary request: A premium, calm documentary image of a diverse Black global Chr
 
 Constraints: no logos, watermarks, generated type, clickbait effects, stereotypes, or fictional public claims.
 
+## Generated production assets
+
+| File | Generated | Tool | Intended use | Dimensions | Status | Alt text |
+|---|---|---|---|---:|---|---|
+| `assets/media/teaching/architecture-of-redemption.png` | 2026-07-17 | Built-in image generation | Featured Teaching series | 1672 x 941 | Integrated; owner-approved concept | A biblical scholar studying Scripture and maps in a warm library |
+| `assets/media/teaching/spiritual-formation.png` | 2026-07-17 | Built-in image generation | Spiritual Formation pathway | 1672 x 941 | Integrated; owner-approved concept | A woman reading Scripture and writing in a journal at home |
+| `assets/media/community/belonging.png` | 2026-07-17 | Built-in image generation | Ministries and belonging story | 1536 x 1024 | Integrated; owner-approved concept | A multigenerational community sharing conversation around a table |
+| `assets/media/leadership/creative-dominion.png` | 2026-07-17 | Built-in image generation | About leadership and creative dominion story | 1672 x 941 | Integrated; owner-approved concept | Creative professionals collaborating around a table of design materials |
+| `assets/media/social/home.png` | 2026-07-17 | Built-in image generation | Global community social source | 1731 x 909 | Integrated; owner-approved concept | A globally diverse community gathering in a greenhouse-inspired space |
+| `assets/media/social/home.webp` | 2026-07-17 | Derived from approved master | Home Open Graph/Twitter image | 1200 x 630 | Integrated | A globally diverse community gathering in a greenhouse-inspired space |
+| `assets/media/social/teaching.webp` | 2026-07-17 | Derived from approved master | Teaching Open Graph/Twitter image | 1200 x 630 | Integrated | A biblical scholar studying Scripture and maps in a warm library |
+| `assets/media/social/resources.webp` | 2026-07-17 | Derived from approved master | Resources Open Graph/Twitter image | 1200 x 630 | Integrated | A woman reading Scripture and writing in a journal at home |
+
+Prompt and art direction are recorded in `docs/milestone-5-media-production-spec.md`. The image is original editorial artwork, not a documentary photograph of a ministry leader, event, or historical scene.
+
 ## Replacement-ready visual asset list
 
 | Planned filename | Page/section | Display ratio | Source dimensions | Desktop/mobile crop | Status | Alt text |

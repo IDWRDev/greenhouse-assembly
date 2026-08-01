@@ -15,9 +15,23 @@
     const acknowledgement = contactForm.querySelector('input[type="checkbox"]')?.closest('.field');
     const endpointReady = validHttps(config.contactEndpoint);
     const emailReady = validEmail(config.contactEmail);
+    const category = contactForm.querySelector('[name="category"]');
+    const requestedCategory = new URLSearchParams(window.location.search).get('category');
+    if (category && requestedCategory && [...category.options].some(option => option.value === requestedCategory)) {
+      category.value = requestedCategory;
+    }
+
+    document.querySelectorAll('[data-category-link]').forEach(link => {
+      link.addEventListener('click', () => {
+        if (!category) return;
+        const value = link.dataset.categoryLink;
+        if ([...category.options].some(option => option.value === value)) category.value = value;
+      });
+    });
 
     if (endpointReady || emailReady) {
       acknowledgement?.remove();
+      document.querySelector('.contact-notice')?.remove();
       button.type = 'submit';
       button.removeAttribute('aria-disabled');
       button.textContent = 'Send enquiry';
