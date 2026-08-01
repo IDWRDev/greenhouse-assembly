@@ -1,6 +1,6 @@
 window.GREENHOUSE_CONFIG = Object.freeze({
   ministryName: 'The GreenHouse Assembly Ministries',
-  contactEmail: '',
+  contactEmail: 'contact@greenhouseassembly.org',
   contactEndpoint: '',
   publicPhone: '',
   publicAddress: '',
