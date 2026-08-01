@@ -103,6 +103,8 @@ textarea { min-height: 145px; resize: vertical; }
 .form-note { margin: 1rem 0 0; color: var(--muted); font-size: .92rem; }
 .field-error { margin: .25rem 0 0; color: #9b1c1c; font-size: .9rem; font-weight: 700; }
 .form-status { padding: .9rem 1rem; margin-top: 1rem; color: #4a431e; background: var(--gold-100); border-left: 4px solid var(--gold-700); }
+.contact-form .acknowledgement label { display: flex; align-items: flex-start; gap: .65rem; }
+.contact-form .acknowledgement input[type="checkbox"] { flex: 0 0 18px; width: 18px; height: 18px; min-height: 18px; padding: 0; margin: .15rem 0 0; }
 .site-footer { padding-top: 4rem; color: #e5f0e9; background: var(--green-950); }
 .footer-top { display: grid; grid-template-columns: 1.35fr repeat(3, 1fr); gap: 2rem; padding-bottom: 3rem; }
 .footer-brand img, footer .footer-top > img { width: 155px; height: 80px; object-fit: contain; object-position: left; margin-bottom: 1rem; filter: brightness(0) invert(1); }
