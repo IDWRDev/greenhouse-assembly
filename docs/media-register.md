@@ -73,3 +73,10 @@ Prompt and art direction are recorded in `docs/milestone-5-media-production-spec
 | `assets/media/social/resources.webp` | Resources social preview | 1.91:1 | 1200 × 630 | Books and notes focal point | Requires real asset | Bible, reading notes and warm natural study textures |
 
 All thumbnails currently visible in the site are CSS editorial simulations. They use no unlicensed photograph and must not be represented as real videos, recorded events, or historical documentation.
+# Content-completion preview additions
+
+| ID | File | Type | Source | Intended use | Review state |
+|---|---|---|---|---|---|
+| GH-VIDEO-001 | `assets/media/video/architecture-of-redemption.mp4` | 12-second silent H.264 MP4 | Motion treatment derived from approved Architecture of Redemption artwork | Teaching visual introduction | Preview only |
+| GH-VIDEO-002 | `assets/media/video/spiritual-formation.mp4` | 12-second silent H.264 MP4 | Motion treatment derived from approved Spiritual Formation artwork | Teaching visual introduction | Preview only |
+| GH-VIDEO-003 | `assets/media/video/belonging-and-community.mp4` | 12-second silent H.264 MP4 | Motion treatment derived from approved Belonging artwork | Community visual introduction | Preview only |

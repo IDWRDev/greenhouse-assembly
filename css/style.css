@@ -973,6 +973,23 @@ footer{
 @media (prefers-reduced-motion:reduce){
   .site-header{transition-duration:.01ms}
 }
+
+/* Preview review: keep mobile hero actions aligned with the left-hand content edge. */
+@media (max-width:640px){
+  .hero--home .hero-actions{
+    width:100%;
+    align-items:flex-start!important;
+    justify-content:flex-start!important;
+    text-align:left;
+  }
+  .hero--home .hero-actions .button,
+  .hero--home .hero-actions .text-link{
+    width:auto!important;
+    align-self:flex-start;
+    justify-content:flex-start;
+    margin-inline:0!important;
+  }
+}
 @media (max-width:375px){
   .container{
     width:calc(100% - 28px)

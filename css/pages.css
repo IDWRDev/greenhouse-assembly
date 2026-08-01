@@ -1,4 +1,5 @@
 @import url('foundation.css');
+@import url('content-completion.css');
 
 :root {
   --green-950: #0d4030;
