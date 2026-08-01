@@ -75,6 +75,15 @@ Prompt and art direction are recorded in `docs/milestone-5-media-production-spec
 All thumbnails currently visible in the site are CSS editorial simulations. They use no unlicensed photograph and must not be represented as real videos, recorded events, or historical documentation.
 # Content-completion preview additions
 
+## Approved book artwork
+
+| ID | File | Type | Source | Intended use | Review state |
+|---|---|---|---|---|---|
+| GH-BOOK-COVER-001 | `assets/media/book/divine-art-of-violence-cover.png` | Portrait PNG master | Owner supplied, 2026-08-01 | The Divine Art of Violence primary cover | Approved source |
+| GH-BOOK-COVER-002 | `assets/media/book/divine-art-of-violence-cover-700.webp` | Optimised portrait WebP | Derived from owner-approved master | Homepage, Resources feature and library card | Web delivery |
+| GH-BOOK-JACKET-001 | `assets/media/book/divine-art-of-violence-jacket.png` | Full-wrap PNG master | Owner supplied, 2026-08-01 | Complete jacket reference | Approved source |
+| GH-BOOK-JACKET-002 | `assets/media/book/divine-art-of-violence-jacket-1400.webp` | Optimised landscape WebP | Derived from owner-approved master | Full-jacket detail view | Web delivery |
+
 | ID | File | Type | Source | Intended use | Review state |
 |---|---|---|---|---|---|
 | GH-VIDEO-001 | `assets/media/video/architecture-of-redemption.mp4` | 12-second silent H.264 MP4 | Motion treatment derived from approved Architecture of Redemption artwork | Teaching visual introduction | Preview only |
