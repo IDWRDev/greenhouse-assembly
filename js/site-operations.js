@@ -35,7 +35,7 @@
       button.type = 'submit';
       button.removeAttribute('aria-disabled');
       button.textContent = 'Send enquiry';
-      setStatus(status, 'Required fields are marked. Please do not include passwords, financial details or urgent medical information.');
+      setStatus(status, 'Required fields are marked.');
 
       contactForm.addEventListener('submit', async event => {
         event.preventDefault();
