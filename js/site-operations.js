@@ -47,7 +47,8 @@
         if (endpointReady) {
           try {
             const response = await fetch(config.contactEndpoint, { method: 'POST', body: data, headers: { Accept: 'application/json' } });
-            if (!response.ok) throw new Error('Submission endpoint rejected the request.');
+            const result = await response.json().catch(() => ({}));
+            if (!response.ok || result.success === false) throw new Error(result.message || 'Submission endpoint rejected the request.');
             contactForm.reset();
             setStatus(status, 'Thank you. Your enquiry has been sent.', 'success');
           } catch (error) {

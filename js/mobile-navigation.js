@@ -186,10 +186,10 @@
     if (window.__greenhouseOperationsLoading) return;
     window.__greenhouseOperationsLoading = true;
     const operations = document.createElement('script');
-    operations.src = `${root}js/site-operations.js?v=20260801-contact1`;
+    operations.src = `${root}js/site-operations.js?v=20260810-contact3`;
     operations.defer = true;
     const config = document.createElement('script');
-    config.src = `${root}js/site-config.js?v=20260801-contact1`;
+    config.src = `${root}js/site-config.js?v=20260810-contact3`;
     config.onload = () => document.head.append(operations);
     document.head.append(config);
   };
