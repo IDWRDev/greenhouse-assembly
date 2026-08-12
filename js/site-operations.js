@@ -86,4 +86,47 @@
   document.querySelectorAll('[data-config="schedule"]').forEach(node => {
     if (config.gatheringSchedule) node.textContent = config.gatheringSchedule;
   });
+
+  const social = config.social || {};
+  document.querySelectorAll('.social-presence').forEach(grid => {
+    if (!validHttps(social.youtube) || grid.querySelector(`[href="${social.youtube}"]`)) return;
+    const youtube = document.createElement('a');
+    youtube.className = 'social-presence__item';
+    youtube.href = social.youtube;
+    youtube.target = '_blank';
+    youtube.rel = 'noopener noreferrer';
+    youtube.innerHTML = `<span>YouTube</span><strong>${social.youtubeHandle || '@GreenHouseAssembly'}</strong>`;
+    grid.append(youtube);
+  });
+  document.querySelectorAll('p').forEach(paragraph => {
+    if (paragraph.textContent.includes('Confirmed dates, times and platform links will be shared')) {
+      paragraph.textContent = 'These practices shape our digital gatherings. Follow our confirmed social accounts above and use the contact route for the current date and time.';
+    }
+    if (paragraph.textContent.includes('We will add the approved profile links to this page')) {
+      paragraph.textContent = 'Gatherings are online across our confirmed Instagram, TikTok, Facebook and X presence for now. Use the links published on this page or contact us for the next live schedule.';
+    }
+  });
+  document.querySelectorAll('.footer-brand').forEach(brand => {
+    if (brand.querySelector('.footer-socials')) return;
+    const links = [
+      ['Instagram', social.instagram, social.instagramHandle],
+      ['TikTok', social.tiktok, social.tiktokHandle],
+      ['YouTube', social.youtube, social.youtubeHandle],
+      ['X', social.x, social.xHandle]
+    ].filter(([, url]) => validHttps(url));
+    if (!links.length) return;
+    const nav = document.createElement('nav');
+    nav.className = 'footer-socials';
+    nav.setAttribute('aria-label', 'Social media');
+    links.forEach(([platform, url, handle]) => {
+      const link = document.createElement('a');
+      link.href = url;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      link.setAttribute('aria-label', `${platform}: ${handle || platform} (opens in a new tab)`);
+      link.textContent = platform;
+      nav.append(link);
+    });
+    brand.append(nav);
+  });
 })();

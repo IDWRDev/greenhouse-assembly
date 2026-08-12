@@ -12,9 +12,15 @@ window.GREENHOUSE_CONFIG = Object.freeze({
   eventRegistrationUrl: '',
   social: Object.freeze({
     facebook: '',
-    instagram: '',
-    youtube: '',
+    facebookName: 'The GreenHouse Assembly Ministries',
+    instagram: 'https://www.instagram.com/greenhouseassembly/',
+    instagramHandle: '@greenhouseassembly',
+    tiktok: 'https://www.tiktok.com/@greenhouseassembly',
+    tiktokHandle: '@greenhouseassembly',
+    youtube: 'https://www.youtube.com/@GreenHouseAssembly',
+    youtubeHandle: '@GreenHouseAssembly',
     linkedin: '',
-    x: ''
+    x: 'https://x.com/greenhouseassembly',
+    xHandle: '@greenhouseassembly'
   })
 });
