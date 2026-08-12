@@ -11,7 +11,7 @@ window.GREENHOUSE_CONFIG = Object.freeze({
   newsletterAction: '',
   eventRegistrationUrl: '',
   social: Object.freeze({
-    facebook: '',
+    facebook: 'https://www.facebook.com/profile.php?id=61591869475590&mibextid=ZbWKwL',
     facebookName: 'The GreenHouse Assembly Ministries',
     instagram: 'https://www.instagram.com/greenhouseassembly/',
     instagramHandle: '@greenhouseassembly',

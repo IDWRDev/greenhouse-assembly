@@ -88,6 +88,17 @@
   });
 
   const social = config.social || {};
+  document.querySelectorAll('.social-presence__item--listed').forEach(listed => {
+    if (!validHttps(social.facebook) || listed.tagName === 'A') return;
+    const facebook = document.createElement('a');
+    facebook.className = listed.className.replace('social-presence__item--listed', '').trim();
+    facebook.href = social.facebook;
+    facebook.target = '_blank';
+    facebook.rel = 'noopener noreferrer';
+    facebook.setAttribute('aria-label', `${social.facebookName || 'Facebook'} (opens in a new tab)`);
+    facebook.innerHTML = listed.innerHTML;
+    listed.replaceWith(facebook);
+  });
   document.querySelectorAll('.social-presence').forEach(grid => {
     if (!validHttps(social.youtube) || grid.querySelector(`[href="${social.youtube}"]`)) return;
     const youtube = document.createElement('a');
@@ -109,6 +120,7 @@
   document.querySelectorAll('.footer-brand').forEach(brand => {
     if (brand.querySelector('.footer-socials')) return;
     const links = [
+      ['Facebook', social.facebook, social.facebookName],
       ['Instagram', social.instagram, social.instagramHandle],
       ['TikTok', social.tiktok, social.tiktokHandle],
       ['YouTube', social.youtube, social.youtubeHandle],
