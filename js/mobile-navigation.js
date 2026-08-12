@@ -2,8 +2,7 @@
   if (window.__greenhouseSmartHeaderInitialized) return;
   window.__greenhouseSmartHeaderInitialized = true;
 
-  const nestedRoute = /\/(pages|documents)\//.test(window.location.pathname);
-  const root = nestedRoute ? '../' : '';
+  const root = '/';
   let header = document.querySelector('.site-header');
   if (!header) {
     if (!document.querySelector('link[href$="css/pages.css"]')) {
@@ -14,7 +13,7 @@
     }
     header = document.createElement('header');
     header.className = 'site-header';
-    header.innerHTML = `<div class="nav-wrap"><a class="brand" href="${root}index.html"><img src="${root}assets/logos/navigation-mark.png" alt="The GreenHouse Assembly Ministries"><span>The GreenHouse<small>Assembly Ministries</small></span></a><nav class="site-nav" aria-label="Primary navigation"><a href="${root}index.html">Home</a><a href="${root}pages/about.html">About</a><a href="${root}pages/ministries.html">Ministries</a><a href="${root}pages/teaching.html">Teaching</a><a href="${root}pages/resources.html">Resources</a><a href="${root}pages/events.html">Events</a><a href="${root}pages/contact.html">Contact</a><a class="nav-give" href="${root}pages/donations.html">Give</a></nav></div>`;
+    header.innerHTML = `<div class="nav-wrap"><a class="brand" href="/"><img src="/assets/logos/navigation-mark.png" alt="The GreenHouse Assembly Ministries"><span>The GreenHouse<small>Assembly Ministries</small></span></a><nav class="site-nav" aria-label="Primary navigation"><a href="/">Home</a><a href="/about/">About</a><a href="/ministries/">Ministries</a><a href="/teaching/">Teaching</a><a href="/resources/">Resources</a><a href="/events/">Events</a><a href="/contact/">Contact</a><a class="nav-give" href="/giving/">Give</a></nav></div>`;
     document.body.insertBefore(header, document.body.firstChild);
   }
   const nav = header.querySelector('.site-nav, .nav-links');
