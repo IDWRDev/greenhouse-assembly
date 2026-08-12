@@ -119,11 +119,13 @@ textarea { min-height: 145px; resize: vertical; }
 @media (max-width: 900px) {
   .site-header.is-hiding { transition-duration: 560ms, 420ms; }
   .site-header.is-hidden { transform: translateY(calc(-100% - 4px)); opacity: 0; pointer-events: none; }
-  .nav-wrap { position: relative; display: flex; align-items: center; min-height: 4.4rem; padding: .75rem 0; }
+  .nav-wrap { position: relative; display: flex; flex-wrap: wrap; align-items: center; min-height: 4.4rem; padding: .75rem 0; }
   .brand { min-height: 50px; }
   .mobile-menu-toggle { display: inline-grid; place-items: center; flex: 0 0 44px; width: 44px; height: 44px; margin-left: auto; color: var(--green-950); font-size: 1.55rem; background: transparent; border: 1px solid var(--line); border-radius: .45rem; }
-  .site-nav { display: none; position: absolute; top: calc(100% - .25rem); right: 0; left: 0; z-index: 20; margin: 0; padding: .65rem; background: var(--white); border: 1px solid var(--line); border-radius: .75rem; box-shadow: var(--shadow); }
-  .site-nav.is-open { display: grid; grid-template-columns: 1fr; }
+  .site-nav { display: flex; width: 100%; overflow-x: auto; padding: .35rem 0; scrollbar-width: none; }
+  .site-nav::-webkit-scrollbar { display: none; }
+  .site-header[data-navigation-ready="true"] .site-nav { display: none; position: absolute; top: calc(100% - .25rem); right: 0; left: 0; z-index: 20; width: auto; overflow: visible; margin: 0; padding: .65rem; background: var(--white); border: 1px solid var(--line); border-radius: .75rem; box-shadow: var(--shadow); }
+  .site-header[data-navigation-ready="true"] .site-nav.is-open { display: grid; grid-template-columns: 1fr; }
   .site-nav a { width: 100%; min-height: 48px; padding-inline: .75rem; }
   .site-nav .nav-give { margin: .25rem 0 0; }
   body.menu-is-open { overflow: hidden; }
