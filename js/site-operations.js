@@ -109,14 +109,6 @@
     youtube.innerHTML = `<span>YouTube</span><strong>${social.youtubeHandle || '@GreenHouseAssembly'}</strong>`;
     grid.append(youtube);
   });
-  document.querySelectorAll('p').forEach(paragraph => {
-    if (paragraph.textContent.includes('Confirmed dates, times and platform links will be shared')) {
-      paragraph.textContent = 'These practices shape our digital gatherings. Follow our confirmed social accounts above and use the contact route for the current date and time.';
-    }
-    if (paragraph.textContent.includes('We will add the approved profile links to this page')) {
-      paragraph.textContent = 'Gatherings are online across our confirmed Instagram, TikTok, Facebook and X presence for now. Use the links published on this page or contact us for the next live schedule.';
-    }
-  });
   document.querySelectorAll('.footer-brand').forEach(brand => {
     if (brand.querySelector('.footer-socials')) return;
     const links = [
