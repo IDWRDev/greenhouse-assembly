@@ -92,13 +92,24 @@
     const hint = document.createElement('link');
     hint.rel = 'prefetch';
     hint.href = href;
-    hint.as = 'document';
     hint.fetchPriority = 'low';
     document.head.append(hint);
   };
-  document.addEventListener('pointerover', (event) => prefetch(event.target.closest('a[href]')), { passive: true });
-  document.addEventListener('focusin', (event) => prefetch(event.target.closest('a[href]')));
-  document.addEventListener('touchstart', (event) => prefetch(event.target.closest('a[href]')), { passive: true });
+  const linkFromEvent = (event) => event.target instanceof Element
+    ? event.target.closest('a[href]')
+    : null;
+  document.addEventListener('pointerover', (event) => prefetch(linkFromEvent(event)), { passive: true });
+  document.addEventListener('focusin', (event) => prefetch(linkFromEvent(event)));
+  document.addEventListener('touchstart', (event) => prefetch(linkFromEvent(event)), { passive: true });
+
+  const warmPrimaryNavigation = () => {
+    header.querySelectorAll('.site-nav a[href], .nav-links a[href]').forEach(prefetch);
+  };
+  if ('requestIdleCallback' in window) {
+    window.requestIdleCallback(warmPrimaryNavigation, { timeout: 1200 });
+  } else {
+    window.setTimeout(warmPrimaryNavigation, 600);
+  }
 
   const loadOperations = () => {
     if (window.__greenhouseOperationsLoading) return;
