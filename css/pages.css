@@ -195,3 +195,17 @@ a.social-presence__item:hover { transform: translateY(-2px); border-color: var(-
 .teaching-poster--4 { background: linear-gradient(135deg, #263f53, #48633c); }
 .teaching-poster__series, .teaching-poster__state { width: max-content; max-width: 100%; padding: .28rem .45rem; font-size: .66rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; background: rgba(0,0,0,.33); border: 1px solid rgba(255,255,255,.42); border-radius: .25rem; }
 .teaching-poster__play { align-self: center; display: grid; place-items: center; width: 52px; height: 52px; padding-left: .18rem; font-size: 1.1rem; background: rgba(255,255,255,.92); color: var(--green-950); border-radius: 50%; box-shadow: 0 8px 24px rgba(0,0,0,.26); }
+
+/* Standalone Reading Room articles: crawlable, shareable pages that preserve the established editorial system. */
+.article-breadcrumb { padding: 1rem 0; color: var(--sage-700); background: var(--cream); border-bottom: 1px solid var(--line); }
+.article-breadcrumb .container { display: flex; flex-wrap: wrap; gap: .45rem .7rem; align-items: center; font-size: .86rem; }
+.article-breadcrumb a { color: var(--green-800); font-weight: 700; text-decoration-thickness: 1px; text-underline-offset: .18em; }
+.reading-piece--standalone { scroll-margin-top: 5rem; }
+.reading-piece--standalone h1 { position: relative; z-index: 1; max-width: 11ch; margin: auto 0 1.15rem; color: #fff; font: 500 clamp(2.65rem, 5vw, 5rem)/.98 var(--font-display); text-wrap: balance; }
+.article-next { padding: clamp(3.25rem, 7vw, 6rem) 0; background: var(--cream); border-top: 1px solid var(--line); }
+.article-next h2 { max-width: 14ch; margin: .5rem 0 1.5rem; }
+@media (max-width: 600px) {
+  .article-breadcrumb { padding: .8rem 0; }
+  .article-breadcrumb .container { font-size: .78rem; }
+  .reading-piece--standalone h1 { max-width: 12ch; font-size: clamp(2.45rem, 12vw, 3.3rem); }
+}
