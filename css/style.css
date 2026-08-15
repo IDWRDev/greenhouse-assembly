@@ -960,16 +960,6 @@ footer{
     display:block
   }
 }
-@media (max-width:900px){
-  .site-header.is-hiding{
-    transition-duration:560ms,420ms
-  }
-  .site-header.is-hidden{
-    transform:translateY(calc(-100% - 4px));
-    opacity:0;
-    pointer-events:none
-  }
-}
 @media (prefers-reduced-motion:reduce){
   .site-header{transition-duration:.01ms}
 }
