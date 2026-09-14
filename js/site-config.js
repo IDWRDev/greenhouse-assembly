@@ -8,6 +8,8 @@ window.GREENHOUSE_CONFIG = Object.freeze({
   gatheringSchedule: '',
   officeHours: '',
   givingUrl: '',
+  givingEnabled: false,
+  givingApiBase: '',
   newsletterAction: '',
   eventRegistrationUrl: '',
   social: Object.freeze({
