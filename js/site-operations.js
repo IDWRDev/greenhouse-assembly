@@ -8,7 +8,9 @@
     element.dataset.state = state;
   };
 
-  const contactForm = document.querySelector('form.form-grid');
+  // Only enhance the contact form. The giving page uses the same layout class
+  // but has its own secure payment handler.
+  const contactForm = document.querySelector('form.contact-form.form-grid');
   if (contactForm) {
     const status = contactForm.querySelector('#form-status');
     const button = contactForm.querySelector('button');
