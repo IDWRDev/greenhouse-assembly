@@ -102,15 +102,6 @@
   document.addEventListener('focusin', (event) => prefetch(linkFromEvent(event)));
   document.addEventListener('touchstart', (event) => prefetch(linkFromEvent(event)), { passive: true });
 
-  const warmPrimaryNavigation = () => {
-    header.querySelectorAll('.site-nav a[href], .nav-links a[href]').forEach(prefetch);
-  };
-  if ('requestIdleCallback' in window) {
-    window.requestIdleCallback(warmPrimaryNavigation, { timeout: 1200 });
-  } else {
-    window.setTimeout(warmPrimaryNavigation, 600);
-  }
-
   const loadOperations = () => {
     if (window.__greenhouseOperationsLoading) return;
     window.__greenhouseOperationsLoading = true;

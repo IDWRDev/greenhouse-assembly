@@ -36,7 +36,11 @@
 
   <main id="main-content">
     <section class="hero hero--home" aria-labelledby="hero-title">
-      <img class="hero-media" src="assets/hero-gathering.png" alt="A community gathered in a light-filled greenhouse setting">
+      <picture>
+        <source media="(max-width: 700px)" srcset="assets/hero-gathering-960.webp" type="image/webp">
+        <source srcset="assets/hero-gathering-1600.webp" type="image/webp">
+        <img class="hero-media" src="assets/hero-gathering.png" width="1962" height="802" fetchpriority="high" decoding="async" alt="A community gathered in a light-filled greenhouse setting">
+      </picture>
       <div class="hero-overlay"></div>
       <div class="container hero-content">
         <p class="eyebrow light">Welcome to The GreenHouse</p>
