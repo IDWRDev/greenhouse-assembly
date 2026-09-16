@@ -7,7 +7,10 @@ const ALLOWED_PURPOSES = new Set([
 
 export function cors(req, res) {
   const origin = process.env.GIVING_SITE_ORIGIN || 'https://greenhouseassembly.org';
-  if (req.headers.origin === origin) res.setHeader('Access-Control-Allow-Origin', origin);
+  const previewOrigin = process.env.VERCEL_ENV === 'preview' && process.env.VERCEL_URL
+    ? `https://${process.env.VERCEL_URL}`
+    : '';
+  if ([origin, previewOrigin].includes(req.headers.origin)) res.setHeader('Access-Control-Allow-Origin', req.headers.origin);
   res.setHeader('Vary', 'Origin');
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
