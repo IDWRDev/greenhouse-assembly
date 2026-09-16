@@ -8,8 +8,10 @@ window.GREENHOUSE_CONFIG = Object.freeze({
   gatheringSchedule: '',
   officeHours: '',
   givingUrl: '',
-  givingEnabled: false,
-  givingApiBase: '',
+  // Paystack is currently connected with a test key, so this displays the
+  // giving form without enabling real card charges.
+  givingEnabled: true,
+  givingApiBase: window.location.origin,
   newsletterAction: '',
   eventRegistrationUrl: '',
   social: Object.freeze({

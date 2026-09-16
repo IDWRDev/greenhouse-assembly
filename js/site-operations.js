@@ -8,7 +8,7 @@
     element.dataset.state = state;
   };
 
-  const contactForm = document.querySelector('form.form-grid');
+  const contactForm = document.querySelector('form.contact-form.form-grid');
   if (contactForm) {
     const status = contactForm.querySelector('#form-status');
     const button = contactForm.querySelector('button');
