@@ -8,8 +8,11 @@ window.GREENHOUSE_CONFIG = Object.freeze({
   gatheringSchedule: '',
   officeHours: '',
   givingUrl: '',
-  givingEnabled: false,
-  givingApiBase: '',
+  // This branch is deployed only as a Vercel Preview for Paystack testing.
+  // Using the current preview origin keeps test payment requests isolated
+  // from the public GreenHouse site on the main branch.
+  givingEnabled: true,
+  givingApiBase: window.location.origin,
   newsletterAction: '',
   eventRegistrationUrl: '',
   social: Object.freeze({
